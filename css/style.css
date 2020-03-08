@@ -18,6 +18,10 @@ body, html {
     flex-direction: row;
 }
 
+a{
+    color: #6d00d5;
+}
+
 #logo {
     display: flex;
     flex-direction: row;
@@ -88,14 +92,6 @@ body, html {
         opacity: 0.55;
     }
 }
-
-/* @media (max-width: 1839px) {
-    #topbar {
-        width: 80%;
-        left: 10vw;
-        right: 10vw;
-    }
-} */
 
 @media (min-device-width: 1025px) and (max-device-width: 1838px) {
     #topbar {
