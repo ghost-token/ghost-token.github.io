@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cta {
+    display: flex;
+    flex-direction: row;
+    background-color: #3b3b3b;
+    color: #fff;
+    height: 65%;
+
+    -webkit-box-shadow: inset 0px -28px 42px 0px rgba(43, 43, 43, 1);
+    -moz-box-shadow: inset 0px -28px 42px 0px rgba(43, 43, 43, 1);
+    box-shadow: inset 0px -28px 42px 0px rgba(43, 43, 43, 1);
+}
+
+#cta-content{
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    left: 20vw;
+    right: 20vw;
+    top: 15vh;
+    bottom: 20vh;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+#cta-logo-img {
+    width: 300px;
+    height: 300px;
+}
