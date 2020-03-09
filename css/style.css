@@ -34,6 +34,7 @@ a {
     width: 65px;
     height: 65px;
     z-index: -1;
+    user-select: none;
 }
 
 #logo-text {
@@ -44,6 +45,11 @@ a {
     font-size: 20px;
     font-weight: bold;
     color: #ccc;
+    user-select: none;
+}
+
+#logo-ghost{
+    color: #b7ff7d;
 }
 
 #buttons {
@@ -61,6 +67,7 @@ a {
     font-weight: bold;
     padding: 6px 12px;
     text-decoration: none;
+    user-select: none;
 }
 
 .tb_button {
@@ -85,6 +92,10 @@ a {
 
 #wtbButton:active {
     position: relative;
+}
+
+.socialButton:hover{
+    color: #fff;
 }
 
 #cta {
@@ -152,6 +163,7 @@ li i {
     width: 577px;
     height: 577px;
     opacity: 0.55;
+    user-select: none;
 }
 
 @keyframes pulse {
