@@ -216,3 +216,24 @@ li i {
         left: 0;
     }
 }
+
+@media (max-device-width: 800px) {
+    #logo-img{
+        width: 150px;
+        height: 150px;
+    }
+    #logo-text{
+        font-size: 25pt;
+        margin-top: 45.5px;
+    }
+    .tb_button{
+        font-size: 20pt;
+    }
+
+    #cta-text{
+        font-size: 18pt;
+    }
+    #cta-logo-img{
+        top: 150px;
+    }
+}
