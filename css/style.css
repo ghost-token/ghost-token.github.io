@@ -20,7 +20,7 @@ body, html {
     flex-direction: row;
 }
 
-a{
+a {
     color: #b7ff7d;
 }
 
@@ -70,7 +70,6 @@ a{
 #wtbButton {
     animation: pulse 3s infinite;
     animation-direction: alternate;
-
     box-shadow: 0px 10px 14px -7px #b7ff7d;
     background: linear-gradient(to bottom, #5b8a3c 5%, #b7ff7d 100%);
     background-color: #b7ff7d;
@@ -88,20 +87,24 @@ a{
     position: relative;
 }
 
-#cta{
+#cta {
     padding-top: 100px;
     width: 90vw;
     height: 100vh;
 }
-#cta-container{
+
+#cta-container {
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 15vw;
     right: 15vw;
     width: 70%;
+
+    animation: fadein 1.8s;
 }
-#cta-text{
+
+#cta-text {
     padding-top: 100px;
     padding-left: 25px;
     text-indent: 2em;
@@ -110,36 +113,42 @@ a{
     width: 50%;
     height: 500px;
 }
-#cta-text h1, h2{
+
+#cta-text h1, h2 {
     color: #b7ff7d;
 }
-#cta-text p, li{
+
+#cta-text p, li {
     color: #e3e3e3;
 }
-#cta-text ul{
+
+#cta-text ul {
     list-style: none;
 }
-li i{
+
+li i {
     font-size: 25pt;
     margin-right: 15px;
     margin-bottom: 15px;
     color: #b7ff7d;
 }
 
-#feat1{
+#feat1 {
     animation: pulse 2s infinite;
     animation-direction: alternate;
 }
-#feat2{
+
+#feat2 {
     animation: pulse 2.5s infinite;
     animation-direction: alternate;
 }
-#feat3{
+
+#feat3 {
     animation: pulse 1.7s infinite;
     animation-direction: alternate;
 }
 
-#cta-logo-img{
+#cta-logo-img {
     width: 577px;
     height: 577px;
     opacity: 0.55;
@@ -154,6 +163,15 @@ li i{
     }
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @media (min-device-width: 1400px) and (max-device-width: 1838px) {
     #topbar, #cta-container {
         width: 90%;
@@ -161,20 +179,20 @@ li i{
         right: 5vw;
     }
 }
-@media (max-device-width: 1400px){
+
+@media (max-device-width: 1400px) {
     #cta-container {
         /* flex-direction: column-reverse; */
         width: 90%;
         left: 5vw;
         right: 5vw;
-
         position: relative;
     }
-    #cta-logo-img{
+    #cta-logo-img {
         position: absolute;
         right: -250px;
     }
-    #cta-text{
+    #cta-text {
         position: absolute;
         left: 0;
     }
