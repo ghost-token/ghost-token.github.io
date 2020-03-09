@@ -13,6 +13,7 @@ body, html {
     left: 25vw;
     right: 25vw;
     z-index: 3;
+    padding-top: 25px;
 }
 
 #topbar-items {
@@ -100,7 +101,7 @@ a {
 
 #cta {
     padding-top: 100px;
-    width: 90vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -193,6 +194,12 @@ li i {
 }
 
 @media (max-device-width: 1400px) {
+    #topbar, #cta-container {
+        width: 100%;
+        left: 100px;
+        right: 0;
+    }
+
     #cta-container {
         /* flex-direction: column-reverse; */
         width: 90%;
