@@ -2,17 +2,10 @@
     --contentWidth: 65%;
     --mobileContentWidth: 90%;
 
-    /* --primaryColor: #b7ff7d;
+    --primaryColor: #b7ff7d;
     --secondaryColor: #5b8a3c;
     --textColor: #e3e3e3;
     --headingColor: #b7ff7d;
-    --backgroundGrad0: #122900;
-    --backgroundGrad1: #2e2e2e; */
-
-    --primaryColor: #b545ff;
-    --secondaryColor: #7c2eb0;
-    --textColor: #e3e3e3;
-    --headingColor: #b545ff;
     --backgroundGrad0: #210b30;
     --backgroundGrad1: #2e2e2e;
 }
