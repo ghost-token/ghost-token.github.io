@@ -1,4 +1,4 @@
-:root{
+:root {
     --contentWidth: 65%;
     --mobileContentWidth: 90%;
 }
@@ -16,9 +16,8 @@ body, html {
 }
 
 #main {
-    margin-top: 90px;
+    padding-top: 90px;
     width: 100%;
-    height: 550px;
 }
 
 #topbar-items {
@@ -57,7 +56,7 @@ a {
     user-select: none;
 }
 
-#logo-ghost{
+#logo-ghost {
     color: #b7ff7d;
 }
 
@@ -103,32 +102,31 @@ a {
     position: relative;
 }
 
-.socialButton:hover{
+.socialButton:hover {
     color: #fff;
 }
 
-#cta {
+.sitesection{
     width: var(--contentWidth);
-    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
+    animation: fadein 2s;
 }
 
-#ctaimg{
-    user-select: none;
+#cta {
+    height: auto;
 }
 
 #ctatxt, #ctaimg {
     width: 50%;
-    height: 350px;
 }
 
 #ctatxt {
     text-indent: 2em;
     font-size: 12pt;
     text-align: right;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     color: #ccc;
 }
 
@@ -139,8 +137,9 @@ a {
 #ctatxt p, li {
     color: #e3e3e3;
 }
-#ctatxt h1{
-    margin-top: 150px;
+
+#ctatxt h1 {
+    margin-top: 100px;
 }
 
 #ctatxt ul {
@@ -172,47 +171,60 @@ li i {
 
 #ctaimg {
     text-align: right;
+    height: auto;
 }
 
 #ctaimg img {
+    user-select: none;
     width: 100%;
+    height: auto;
+}
+
+#learn{
+    height: 350px;
 }
 
 @media (max-device-width: 800px) {
-    #cta {
+    .sitesection {
         flex-direction: column;
     }
     #ctatxt, #ctaimg {
         width: 100%;
+        height: auto;
     }
-    #ctatxt{
+    #ctatxt {
         text-align: center;
         font-size: 16pt;
-        padding: 0;
     }
-    #ctatxt ul{
+    #ctatxt h1{
+        margin-top: 25px;
+    }
+    #ctatxt ul {
         padding: 0;
     }
     #ctaimg {
-        margin-top: -300px;
+        margin-top: -550px;
         opacity: 0.15;
         z-index: 0;
     }
 }
 
 @media (max-device-width: 575px) {
-    #cta, #topbar-items{
+    .sitesection, #topbar-items {
         width: var(--mobileContentWidth);
     }
-    #ctatxt, .tb_button, #logo-text{
+    #ctatxt, .tb_button, #logo-text {
         font-size: 26pt;
     }
-    #logo-img{
+    #logo-img {
         width: 95px;
         height: 95px;
     }
-    #ctatxt{
+    #ctatxt {
         padding: 0;
+    }
+    #ctaimg {
+        margin-top: -750px;
     }
 }
 
