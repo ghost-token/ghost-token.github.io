@@ -1,3 +1,8 @@
+:root{
+    --contentWidth: 65%;
+    --mobileContentWidth: 90%;
+}
+
 body, html {
     margin: 0;
     background-color: #2e2e2e;
@@ -11,13 +16,14 @@ body, html {
 }
 
 #main {
+    margin-top: 90px;
     width: 100%;
     height: 550px;
 }
 
 #topbar-items {
     padding-top: 25px;
-    width: 70%;
+    width: var(--contentWidth);
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -102,11 +108,15 @@ a {
 }
 
 #cta {
-    width: 70%;
-    height: 50px;
+    width: var(--contentWidth);
+    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
+}
+
+#ctaimg{
+    user-select: none;
 }
 
 #ctatxt, #ctaimg {
@@ -192,7 +202,7 @@ li i {
 
 @media (max-device-width: 575px) {
     #cta, #topbar-items{
-        width: 90%;
+        width: var(--mobileContentWidth);
     }
     #ctatxt, .tb_button, #logo-text{
         font-size: 26pt;
