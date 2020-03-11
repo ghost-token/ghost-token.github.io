@@ -1,7 +1,6 @@
 :root {
     --contentWidth: 65%;
     --mobileContentWidth: 90%;
-
     --primaryColor: #b7ff7d;
     --secondaryColor: #5b8a3c;
     --textColor: #e3e3e3;
@@ -21,7 +20,6 @@ body {
     width: 100%;
     height: 115px;
     z-index: 7;
-
     /* background-color: #2e2e2e; */
 }
 
@@ -39,7 +37,6 @@ body {
     background: -ms-linear-gradient(top, var(--backgroundGrad0) 0%, var(--backgroundGrad1) 100%);
     background: linear-gradient(to bottom, var(--backgroundGrad0) 0%, var(--backgroundGrad1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#122900', endColorstr='#2e2e2e', GradientType=0);
-
     /* -webkit-box-shadow: 0px 1px 242px -3px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 1px 242px -3px rgba(0, 0, 0, 1);
     box-shadow: 0px 1px 242px -3px rgba(0, 0, 0, 1);
@@ -111,7 +108,7 @@ a {
     top: 1px;
 }
 
-.grnButton{
+.grnButton {
     box-shadow: 0px 10px 14px -7px var(--primaryColor);
     background: linear-gradient(to bottom, var(--secondaryColor) 5%, var(--primaryColor) 100%);
     background-color: var(--primaryColor);
@@ -124,6 +121,7 @@ a {
     background: linear-gradient(to bottom, var(--secondaryColor) 5%, var(--primaryColor) 100%);
     background-color: var(--primaryColor);
 }
+
 .grnButton:active {
     position: relative;
 }
@@ -164,7 +162,7 @@ a {
     color: var(--primaryColor);
 }
 
-#ctatxt p{
+#ctatxt p {
     text-indent: 2em;
 }
 
@@ -293,4 +291,15 @@ li i {
     to {
         opacity: 1;
     }
+}
+
+/* Parallax Scroll Stuff */
+
+#middle{
+    background: url("../img/GTmidsBG.png") repeat fixed 100%;
+    background-position-x: center;
+}
+#midinner{
+    padding-top: 150px;
+  padding-bottom: 150px;
 }
