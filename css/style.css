@@ -300,7 +300,7 @@ li i {
 
 #middle {
     background: url("../img/GTmidsBGopt.jpg") no-repeat fixed 100%;
-    /* background-size: cover; */
+    background-size: cover;
     background-position-x: center;
 }
 
