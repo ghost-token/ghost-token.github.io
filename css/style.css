@@ -228,6 +228,9 @@ li i {
 }
 
 @media (max-device-width: 800px) {
+    #middle{
+        display: none;
+    }
     .sitesection {
         flex-direction: column;
     }
