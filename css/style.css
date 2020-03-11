@@ -228,7 +228,7 @@ li i {
 }
 
 @media (max-device-width: 800px) {
-    #middle{
+    #middle {
         display: none;
     }
     .sitesection {
@@ -298,11 +298,13 @@ li i {
 
 /* Parallax Scroll Stuff */
 
-#middle{
-    background: url("../img/GTmidsBG.png") repeat fixed 100%;
+#middle {
+    background: url("../img/GTmidsBGopt.jpg") no-repeat fixed 100%;
+    /* background-size: cover; */
     background-position-x: center;
 }
-#midinner{
+
+#midinner {
     padding-top: 150px;
-  padding-bottom: 150px;
+    padding-bottom: 150px;
 }
